@@ -1,0 +1,25 @@
+flowchart TD
+    %% تعریف نودها (فقط یک بار تعریف می‌شوند)
+    Server[Your Server]
+    Stripe[Stripe]
+    User[User]
+
+    %% تنظیم چیدمان: سرور و استرایپ در یک ردیف باشند
+    subgraph TopRow [ ]
+        direction LR
+        Server
+        Stripe
+    end
+
+    %% تعریف ارتباطات (فلش‌ها)
+    Server -- "1. Create Session" --> Stripe
+    Stripe -- "2. Returns Payment URL" --> Server
+    
+    %% ارتباط کاربر
+    User -- "3. Pays" --> Stripe
+    
+    %% وب‌هوک نهایی
+    Stripe -.->|4. Webhook Result| Server
+
+    %% استایل‌دهی برای حذف کادر دور ردیف بالا (اختیاری)
+    style TopRow fill:none,stroke:none
