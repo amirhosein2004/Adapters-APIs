@@ -1,0 +1,32 @@
+{
+    // ========== Required VS Code Extensions ==========
+    // Install these extensions for the best development experience:
+    // 1. ms-python.python (Microsoft Python extension)
+    // 2. ms-python.vscode-pylance (Pylance for type checking)
+    // 3. charliermarsh.ruff (Ruff for linting and formatting)
+
+    // ========== File Exclusions ==========
+    // Hide generated and build files from explorer
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        ".idea": true,
+        "**/.pytest_cache": true,
+        "**/.coverage": true,
+        "**/*.egg-info": true,
+        "**/.ruff_cache": true,
+        "**/.mypy_cache": true
+    },
+    // Don't search in these directories for better performance
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/venv": true,
+        "**/.venv": true,
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/.ruff_cache": true
+    },
+}
