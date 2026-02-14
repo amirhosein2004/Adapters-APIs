@@ -1,5 +1,6 @@
-# Payment Gateway Projects
+# Adapters
 
-* ### A samples Gateways codes
+* ### Stripe Sandbox - Payment Gateway
+* ### Gemini Adapter - AI Text Generation
 
-A collection of payment gateway implementations for testing and learning purposes.
+A collection of payment gateway implementations and AI adapters for testing and learning purposes.
